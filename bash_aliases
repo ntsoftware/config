@@ -1,3 +1,5 @@
+alias df='df -h'
+alias du='du -h'
 alias ga='git add'
 alias gap='git add --patch'
 alias gc='git commit'
