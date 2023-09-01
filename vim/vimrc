@@ -17,6 +17,7 @@ endif
 set backup
 set undofile
 set expandtab
+set hlsearch
 
 let mapleader=" "
 
