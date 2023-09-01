@@ -3,3 +3,4 @@
 	name = Nicolas Torneri
 [core]
 	editor = vi
+	autocrlf = true
