@@ -1,10 +1,25 @@
+source $VIMRUNTIME/defaults.vim
+
+let &directory = expand("~/.vimdata/swap")
+let &backupdir = expand("~/.vimdata/backup")
+let &undodir = expand("~/.vimdata/undo")
+
+if !isdirectory(&directory)
+    call mkdir(&directory, "p")
+endif
+if !isdirectory(&backupdir)
+    call mkdir(&backupdir, "p")
+endif
+if !isdirectory(&undodir)
+    call mkdir(&undodir, "p")
+endif
+
+set backup
+set undofile
 set expandtab
-set hlsearch
-set incsearch
-filetype on
-filetype plugin on
-filetype indent on
+
 let mapleader=" "
+
 noremap <Leader>h <C-W>h
 noremap <Leader>j <C-W>j
 noremap <Leader>k <C-W>k
@@ -13,4 +28,5 @@ noremap <Leader>x <C-W>x
 noremap <Leader>t :terminal<CR>
 noremap <Leader>nh :nohlsearch<CR>
 noremap <Leader>hc :helpclose<CR>
+
 tnoremap <Esc> <C-\><C-n>
