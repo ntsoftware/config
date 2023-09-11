@@ -1,0 +1,4 @@
+set guifont=JuliaMono_Nerd_Font_Mono:h11
+set guioptions-=mrLT
+set linespace=1
+colorscheme koehler
