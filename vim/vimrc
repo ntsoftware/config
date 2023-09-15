@@ -18,6 +18,7 @@ set backup
 set undofile
 set expandtab
 set hlsearch
+set fileformats=unix,dos
 
 let mapleader=" "
 
