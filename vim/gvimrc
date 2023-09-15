@@ -1,4 +1,3 @@
-set guifont=JuliaMono_Nerd_Font_Mono:h11
+set guifont=JuliaMono_Nerd_Font_Mono:h10.5
 set guioptions-=mrLT
-set linespace=1
-colorscheme koehler
+colorscheme darkblue

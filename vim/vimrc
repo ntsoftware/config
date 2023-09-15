@@ -27,7 +27,7 @@ noremap <Leader>k <C-W>k
 noremap <Leader>l <C-W>l
 noremap <Leader>x <C-W>x
 noremap <Leader>t :terminal<CR>
-noremap <Leader>nh :nohlsearch<CR>
-noremap <Leader>hc :helpclose<CR>
+noremap <Leader>n :nohlsearch<CR>
+noremap <Leader>c :helpclose<CR>
 
 tnoremap <Esc> <C-\><C-n>
