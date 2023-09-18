@@ -1,3 +1,4 @@
+alias=doskey /macros $* | sort
 clear=cls
 la=dir /A $*
 ll=dir $*
