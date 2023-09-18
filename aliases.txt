@@ -1,6 +1,6 @@
 alias=doskey /macros $* | sort
 clear=cls
-la=dir /A $*
+la=dir /a $*
 ll=dir $*
 ls=dir $*
 rm=del $*
