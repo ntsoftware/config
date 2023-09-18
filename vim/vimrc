@@ -34,4 +34,6 @@ noremap <Leader>c :helpclose<CR>
 noremap <Leader>m :bnext<CR>
 noremap <Leader>q :bprevious<CR>
 
+inoremap jk <Esc>
+
 tnoremap <Esc> <C-\><C-n>
