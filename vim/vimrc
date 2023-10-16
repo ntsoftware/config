@@ -31,9 +31,6 @@ noremap <Leader>x <C-W>x
 noremap <Leader>t :terminal<CR>
 noremap <Leader>n :nohlsearch<CR>
 noremap <Leader>c :helpclose<CR>
-noremap <Leader>m :bnext<CR>
-noremap <Leader>q :bprevious<CR>
-
-inoremap jk <Esc>
+noremap <Leader>e :E!<CR>
 
 tnoremap <Esc> <C-\><C-n>

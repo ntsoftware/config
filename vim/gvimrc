@@ -1,4 +1,4 @@
-set guifont=JuliaMono_Nerd_Font_Mono:h10
+set guifont=JuliaMono_Nerd_Font_Mono:h10.5
 set guioptions-=mrLT
 set linespace=0
 colorscheme darkblue
