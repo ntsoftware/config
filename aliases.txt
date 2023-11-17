@@ -25,3 +25,5 @@ gri=git rebase --interactive --autosquash $*
 gs=git status $*
 vi=vim $*
 gv=gvim $*
+n=ninja $*
+nc=ninja clean $*
