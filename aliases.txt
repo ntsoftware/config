@@ -26,4 +26,4 @@ gs=git status $*
 vi=vim $*
 gv=gvim $*
 n=ninja $*
-nc=ninja clean $*
+rd=rustup doc --std $*
