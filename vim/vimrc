@@ -28,9 +28,19 @@ noremap <Leader>k <C-W>k
 noremap <Leader>l <C-W>l
 noremap <Leader>x <C-W>x
 
-noremap <Leader>t :terminal<CR>
+noremap <Leader>f :FZF<CR>
 noremap <Leader>n :nohlsearch<CR>
 noremap <Leader>c :helpclose<CR>
 noremap <Leader>e :E!<CR>
 
-tnoremap <Esc> <C-\><C-n>
+inoremap <expr> <CR> coc#pum#visible() ? coc#pum#confirm() : "\<CR>"
+
+function! CheckBackspace() abort
+  let col = col('.') - 1
+  return !col || getline('.')[col - 1]  =~# '\s'
+endfunction
+
+inoremap <silent><expr> <Tab>
+      \ coc#pum#visible() ? coc#pum#next(1) :
+      \ CheckBackspace() ? "\<Tab>" :
+      \ coc#refresh()
