@@ -14,13 +14,18 @@ if !isdirectory(&undodir)
     call mkdir(&undodir, "p")
 endif
 
+set termguicolors
+set cursorline
+set splitbelow
 set backup
 set undofile
 set expandtab
 set hlsearch
 set fileformats=unix,dos
 
-let mapleader=" "
+colorscheme dracula
+
+let mapleader = " "
 
 noremap <Leader>h <C-W>h
 noremap <Leader>j <C-W>j
@@ -33,14 +38,14 @@ noremap <Leader>n :nohlsearch<CR>
 noremap <Leader>c :helpclose<CR>
 noremap <Leader>e :E!<CR>
 
-inoremap <expr> <CR> coc#pum#visible() ? coc#pum#confirm() : "\<CR>"
+nmap <silent> <C-k> <Plug>(ale_previous_wrap)
+nmap <silent> <C-j> <Plug>(ale_next_wrap)
 
-function! CheckBackspace() abort
-  let col = col('.') - 1
-  return !col || getline('.')[col - 1]  =~# '\s'
-endfunction
+" Enable completion support
+let g:ale_completion_enabled = 1
 
-inoremap <silent><expr> <Tab>
-      \ coc#pum#visible() ? coc#pum#next(1) :
-      \ CheckBackspace() ? "\<Tab>" :
-      \ coc#refresh()
+" Algays show the sign gutter even without no warnings and errors
+let g:ale_sign_column_always = 1
+
+" Manually trigger LSP autocomplete and show the menu on C-Space
+imap <C-Space> <Plug>(ale_complete)
