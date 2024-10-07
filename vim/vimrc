@@ -14,6 +14,7 @@ if !isdirectory(&undodir)
     call mkdir(&undodir, "p")
 endif
 
+set visualbell
 set termguicolors
 set cursorline
 set splitbelow
@@ -49,3 +50,6 @@ let g:ale_sign_column_always = 1
 
 " Manually trigger LSP autocomplete and show the menu on C-Space
 imap <C-Space> <Plug>(ale_complete)
+
+" Abbreviate 'vim modeline'
+iab vml vim:cin:et:sw=4:ts=8:

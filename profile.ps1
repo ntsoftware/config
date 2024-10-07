@@ -80,6 +80,10 @@ function Invoke-Explorer {
     explorer . @args
 }
 
+function Invoke-VisualStudioCode {
+    code . @args
+}
+
 function Invoke-RustupDoc {
     rustup doc --std @args
 }
@@ -99,10 +103,11 @@ set-alias -name gp -value Invoke-GitPush
 set-alias -name gpt -value Invoke-GitPushTags
 set-alias -name gri -value Invoke-GitRebaseInteractive
 set-alias -name gs -value Invoke-GitStatus
-set-alias -name vi -value Invoke-Vim
+set-alias -name vi -value Invoke-VimGui
 set-alias -name gv -value Invoke-VimGui
 set-alias -name n -value Invoke-Ninja
 set-alias -name e -value Invoke-Explorer
+set-alias -name c -value Invoke-VisualStudioCode
 set-alias -name rud -value Invoke-RustupDoc
 
 # Disable prediction completion while typing
@@ -133,8 +138,8 @@ set-alias -name cdi -value __zoxide_zi
 # SIG # Begin signature block
 # MIIFzgYJKoZIhvcNAQcCoIIFvzCCBbsCAQExDzANBglghkgBZQMEAgEFADB5Bgor
 # BgEEAYI3AgEEoGswaTA0BgorBgEEAYI3AgEeMCYCAwEAAAQQH8w7YFlLCE63JNLG
-# KX7zUQIBAAIBAAIBAAIBAAIBADAxMA0GCWCGSAFlAwQCAQUABCBPj/ida2ShOGwZ
-# CYvlS+aa+RgcLacxxDlnPRllP8vmc6CCAzAwggMsMIICFKADAgECAhAeUjdIs8XG
+# KX7zUQIBAAIBAAIBAAIBAAIBADAxMA0GCWCGSAFlAwQCAQUABCA1eL62P+di0I8o
+# zKSATSitP8wOBOZ5bmWQNchUP7L+/KCCAzAwggMsMIICFKADAgECAhAeUjdIs8XG
 # v0PPCVaEob+JMA0GCSqGSIb3DQEBCwUAMC4xLDAqBgNVBAMMI1Bvd2VyU2hlbGwg
 # Q29kZSBTaWduaW5nIENlcnRpZmljYXRlMB4XDTI0MDIyNjEyMjU1MFoXDTI1MDIy
 # NjEyNDU1MFowLjEsMCoGA1UEAwwjUG93ZXJTaGVsbCBDb2RlIFNpZ25pbmcgQ2Vy
@@ -155,12 +160,12 @@ set-alias -name cdi -value __zoxide_zi
 # BAMMI1Bvd2VyU2hlbGwgQ29kZSBTaWduaW5nIENlcnRpZmljYXRlAhAeUjdIs8XG
 # v0PPCVaEob+JMA0GCWCGSAFlAwQCAQUAoIGEMBgGCisGAQQBgjcCAQwxCjAIoAKA
 # AKECgAAwGQYJKoZIhvcNAQkDMQwGCisGAQQBgjcCAQQwHAYKKwYBBAGCNwIBCzEO
-# MAwGCisGAQQBgjcCARUwLwYJKoZIhvcNAQkEMSIEIGNn0El/qUU9i1nzK9HmdPL9
-# umDw1VYVe7wp3hdFT4+aMA0GCSqGSIb3DQEBAQUABIIBAIaYH+GCZdmEQV8TTg/h
-# GrUQKI/N4C8gEsZUrTdM/2TJKzX91Cup6BuksCp8L9pigoH72GdeC8w0UanodyFK
-# 3iWfMMgOIdDRLgdQ4NDQD9mvrgQ8rhvvIiUflcSAojY0Y16j0VkMb/32r4VENjl5
-# 9PKWu35FDfqQlTenpe3FoQrKXRO3jlLT/6d5I0BhnoRWVTQwO+nbwILAK5q6YX8I
-# +rvutg6OZgQEXM39FNJn5d4MLAmIo2P2qqqVUlY0RVCCCnUXR8+Ra4JOFAb0v3IU
-# MLw63kf6lygEJT7DE2FOgLgwRG8+5OMXJyB8ztWMXgk3fYHUSiIjE/CZAS2c0U8B
-# z+o=
+# MAwGCisGAQQBgjcCARUwLwYJKoZIhvcNAQkEMSIEIFnC2ESCMMHmvnK5g/RfKJxE
+# te3nnZNcFSkMMI0Pea4nMA0GCSqGSIb3DQEBAQUABIIBAGbnZYjLSAAGeGDgX/pD
+# FpzHZnzKPrGrwgO9plPp9KZZhr0clc2H1utcle3EFGRaiNRarih4e7LA8m1MXhOK
+# nAW4pcOSy/wh098HtLfux3d9N88uqT20z/t47XJHf/+5sNDrtwjd1q2msnbf2Nx/
+# i9wwODB9Ubckxd4SUzuWFxL6aPMAWzxMxv27BdYKGJ0vLWqEYnGskqwSUT6STjxe
+# IqOiZ1L03d/V1gL0yKG+V110fj3xledklDJB1lRO3Bx6Dy+Ug92sqdPoCCTFnXtC
+# g4PSjz7rNTAzvqEKG5wQQ0MdF/s9WLpW6jLITg3wIj8WzAvY+BpdukOp4i3fImI8
+# NC8=
 # SIG # End signature block
