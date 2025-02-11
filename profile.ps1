@@ -88,6 +88,10 @@ function Invoke-RustupDoc {
     rustup doc --std @args
 }
 
+function Invoke-WSL {
+    wsl --user nit --cd ~
+}
+
 set-alias -name ga -value Invoke-GitAdd
 set-alias -name gap -value Invoke-GitAddPatch
 set-alias -name gc -value Invoke-GitCommit
@@ -109,6 +113,7 @@ set-alias -name n -value Invoke-Ninja
 set-alias -name e -value Invoke-Explorer
 set-alias -name c -value Invoke-VisualStudioCode
 set-alias -name rud -value Invoke-RustupDoc
+set-alias -name w -value Invoke-WSL
 
 # Disable prediction completion while typing
 Set-PSReadLineOption -PredictionSource None
@@ -138,8 +143,8 @@ set-alias -name cdi -value __zoxide_zi
 # SIG # Begin signature block
 # MIIFzgYJKoZIhvcNAQcCoIIFvzCCBbsCAQExDzANBglghkgBZQMEAgEFADB5Bgor
 # BgEEAYI3AgEEoGswaTA0BgorBgEEAYI3AgEeMCYCAwEAAAQQH8w7YFlLCE63JNLG
-# KX7zUQIBAAIBAAIBAAIBAAIBADAxMA0GCWCGSAFlAwQCAQUABCA1eL62P+di0I8o
-# zKSATSitP8wOBOZ5bmWQNchUP7L+/KCCAzAwggMsMIICFKADAgECAhAeUjdIs8XG
+# KX7zUQIBAAIBAAIBAAIBAAIBADAxMA0GCWCGSAFlAwQCAQUABCBcftHXh4pC0FWG
+# OeS5S9Wculgg0vNvz8mKFma0x8pCNKCCAzAwggMsMIICFKADAgECAhAeUjdIs8XG
 # v0PPCVaEob+JMA0GCSqGSIb3DQEBCwUAMC4xLDAqBgNVBAMMI1Bvd2VyU2hlbGwg
 # Q29kZSBTaWduaW5nIENlcnRpZmljYXRlMB4XDTI0MDIyNjEyMjU1MFoXDTI1MDIy
 # NjEyNDU1MFowLjEsMCoGA1UEAwwjUG93ZXJTaGVsbCBDb2RlIFNpZ25pbmcgQ2Vy
@@ -160,12 +165,12 @@ set-alias -name cdi -value __zoxide_zi
 # BAMMI1Bvd2VyU2hlbGwgQ29kZSBTaWduaW5nIENlcnRpZmljYXRlAhAeUjdIs8XG
 # v0PPCVaEob+JMA0GCWCGSAFlAwQCAQUAoIGEMBgGCisGAQQBgjcCAQwxCjAIoAKA
 # AKECgAAwGQYJKoZIhvcNAQkDMQwGCisGAQQBgjcCAQQwHAYKKwYBBAGCNwIBCzEO
-# MAwGCisGAQQBgjcCARUwLwYJKoZIhvcNAQkEMSIEIFnC2ESCMMHmvnK5g/RfKJxE
-# te3nnZNcFSkMMI0Pea4nMA0GCSqGSIb3DQEBAQUABIIBAGbnZYjLSAAGeGDgX/pD
-# FpzHZnzKPrGrwgO9plPp9KZZhr0clc2H1utcle3EFGRaiNRarih4e7LA8m1MXhOK
-# nAW4pcOSy/wh098HtLfux3d9N88uqT20z/t47XJHf/+5sNDrtwjd1q2msnbf2Nx/
-# i9wwODB9Ubckxd4SUzuWFxL6aPMAWzxMxv27BdYKGJ0vLWqEYnGskqwSUT6STjxe
-# IqOiZ1L03d/V1gL0yKG+V110fj3xledklDJB1lRO3Bx6Dy+Ug92sqdPoCCTFnXtC
-# g4PSjz7rNTAzvqEKG5wQQ0MdF/s9WLpW6jLITg3wIj8WzAvY+BpdukOp4i3fImI8
-# NC8=
+# MAwGCisGAQQBgjcCARUwLwYJKoZIhvcNAQkEMSIEIOZbTL/CqMQJtFvsAKhmIc4e
+# Isg7I6CXWZ2kgTXVtknoMA0GCSqGSIb3DQEBAQUABIIBAEkA7o09cva+sY/7oz2b
+# Udi0CE6hZmdGEB0BC8209+xyblSnNeMptuGgnMjsZe6HaL2Zu3s7qp9dORaUUiLu
+# IGbJVAaa1FirL1z3pbs9A1Fb+5B0/oj0EyrKs4YTZGPLPJxAeQTGysfBrFefi/Uq
+# r/EfIyfgGys+7CL3guztOrmDwUmKFzZHufvgxHyffK7WJL8J6nBLBEN3PybDtRRa
+# Q/TwDRkwBXbB01BHIpO3dIKXyoPUX5DD8Of72v/Lo2BXt/84v9MpsFjnQ26Gmluu
+# YF9+kXCKnb7PgzU0Aehvm0WV9lQSXM8nqR7jz7bDwY2Rw/X9DstJWmHXjjCv3uEg
+# Lho=
 # SIG # End signature block

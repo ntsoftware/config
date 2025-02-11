@@ -45,7 +45,7 @@ nmap <silent> <C-j> <Plug>(ale_next_wrap)
 " Enable completion support
 let g:ale_completion_enabled = 1
 
-" Algays show the sign gutter even without no warnings and errors
+" Always show the sign gutter even without no warnings and errors
 let g:ale_sign_column_always = 1
 
 " Manually trigger LSP autocomplete and show the menu on C-Space
