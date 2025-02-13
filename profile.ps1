@@ -100,9 +100,7 @@ set-alias -name gcf -value Invoke-GitCommitFixup
 set-alias -name gco -value Invoke-GitCheckout
 set-alias -name gd -value Invoke-GitDiff
 set-alias -name gdc -value Invoke-GitDiffCached
-set-alias -name gl -value Invoke-GitLog
-set-alias -name glo -value Invoke-GitLogOneline
-set-alias -name glog -value Invoke-GitLogOnelineGraph
+set-alias -name gl -value Invoke-GitLogOnelineGraph
 set-alias -name gp -value Invoke-GitPush
 set-alias -name gpt -value Invoke-GitPushTags
 set-alias -name gri -value Invoke-GitRebaseInteractive
@@ -143,8 +141,8 @@ set-alias -name cdi -value __zoxide_zi
 # SIG # Begin signature block
 # MIIFzgYJKoZIhvcNAQcCoIIFvzCCBbsCAQExDzANBglghkgBZQMEAgEFADB5Bgor
 # BgEEAYI3AgEEoGswaTA0BgorBgEEAYI3AgEeMCYCAwEAAAQQH8w7YFlLCE63JNLG
-# KX7zUQIBAAIBAAIBAAIBAAIBADAxMA0GCWCGSAFlAwQCAQUABCBcftHXh4pC0FWG
-# OeS5S9Wculgg0vNvz8mKFma0x8pCNKCCAzAwggMsMIICFKADAgECAhAeUjdIs8XG
+# KX7zUQIBAAIBAAIBAAIBAAIBADAxMA0GCWCGSAFlAwQCAQUABCCBRXnDHvHzQFl0
+# rFZDHzV9sD9zrZ6Zq6vCctgNWxgLH6CCAzAwggMsMIICFKADAgECAhAeUjdIs8XG
 # v0PPCVaEob+JMA0GCSqGSIb3DQEBCwUAMC4xLDAqBgNVBAMMI1Bvd2VyU2hlbGwg
 # Q29kZSBTaWduaW5nIENlcnRpZmljYXRlMB4XDTI0MDIyNjEyMjU1MFoXDTI1MDIy
 # NjEyNDU1MFowLjEsMCoGA1UEAwwjUG93ZXJTaGVsbCBDb2RlIFNpZ25pbmcgQ2Vy
@@ -165,12 +163,12 @@ set-alias -name cdi -value __zoxide_zi
 # BAMMI1Bvd2VyU2hlbGwgQ29kZSBTaWduaW5nIENlcnRpZmljYXRlAhAeUjdIs8XG
 # v0PPCVaEob+JMA0GCWCGSAFlAwQCAQUAoIGEMBgGCisGAQQBgjcCAQwxCjAIoAKA
 # AKECgAAwGQYJKoZIhvcNAQkDMQwGCisGAQQBgjcCAQQwHAYKKwYBBAGCNwIBCzEO
-# MAwGCisGAQQBgjcCARUwLwYJKoZIhvcNAQkEMSIEIOZbTL/CqMQJtFvsAKhmIc4e
-# Isg7I6CXWZ2kgTXVtknoMA0GCSqGSIb3DQEBAQUABIIBAEkA7o09cva+sY/7oz2b
-# Udi0CE6hZmdGEB0BC8209+xyblSnNeMptuGgnMjsZe6HaL2Zu3s7qp9dORaUUiLu
-# IGbJVAaa1FirL1z3pbs9A1Fb+5B0/oj0EyrKs4YTZGPLPJxAeQTGysfBrFefi/Uq
-# r/EfIyfgGys+7CL3guztOrmDwUmKFzZHufvgxHyffK7WJL8J6nBLBEN3PybDtRRa
-# Q/TwDRkwBXbB01BHIpO3dIKXyoPUX5DD8Of72v/Lo2BXt/84v9MpsFjnQ26Gmluu
-# YF9+kXCKnb7PgzU0Aehvm0WV9lQSXM8nqR7jz7bDwY2Rw/X9DstJWmHXjjCv3uEg
-# Lho=
+# MAwGCisGAQQBgjcCARUwLwYJKoZIhvcNAQkEMSIEIJqn8QZqpfV55srB+to3KNpC
+# SPM9C7cMg2B8+lOjUssJMA0GCSqGSIb3DQEBAQUABIIBAHjHxLRRRJ2HDydvXl+k
+# K57VyUjmcFkutw3Hux5Z0sfjH3iX7t+EfYK5P3v+R62K4CpFEJm+hyO3YbGhnTW1
+# nI/BQTsYd7j5qtEEvKEEza3Pf0WAn2uYs2zoawCbNqOu6W96GVqbP8yOdcpOx1EQ
+# k6Tx91FiiLXqPPuBOHr/c/rG9zJj0E/KW7t/qIsMMGIBx2+Rxp60MZV6hG2zTvao
+# xiDgsMtURGoztCtkjUaOoftE8Osp5lJo0wRjh1Ja+DMg/JJ0DMAINUpciPj9e4bG
+# GDU/CdQ4tRcnWqqJcwXPtGdK0iXMQ+SFzrZ6s0zLGDjUTnRk3xzfSVCYNLyTwzvu
+# v/8=
 # SIG # End signature block
